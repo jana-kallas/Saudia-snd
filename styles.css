@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Saudia Text';
+    src: url('fonts/SaudiaText-Italic.woff2') format('woff2'),
+        url('fonts/SaudiaText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Headline';
+    src: url('fonts/SaudiaHeadline-Light.woff2') format('woff2'),
+        url('fonts/SaudiaHeadline-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text';
+    src: url('fonts/SaudiaText-Bold.woff2') format('woff2'),
+        url('fonts/SaudiaText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text';
+    src: url('fonts/SaudiaText-BoldItalic.woff2') format('woff2'),
+        url('fonts/SaudiaText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Headline';
+    src: url('fonts/SaudiaHeadline.woff2') format('woff2'),
+        url('fonts/SaudiaHeadline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text';
+    src: url('fonts/SaudiaText-LightItalic.woff2') format('woff2'),
+        url('fonts/SaudiaText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text';
+    src: url('fonts/SaudiaText-Light.woff2') format('woff2'),
+        url('fonts/SaudiaText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text';
+    src: url('fonts/SaudiaText.woff2') format('woff2'),
+        url('fonts/SaudiaText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Saudia Text Arabic';
+    src: url('fonts/SaudiaTextArabic-Bold.woff2') format('woff2'),
+        url('fonts/SaudiaTextArabic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Headline Arabic';
+    src: url('fonts/SaudiaHeadlineArabic-Light.woff2') format('woff2'),
+        url('fonts/SaudiaHeadlineArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text Arabic';
+    src: url('fonts/SaudiaTextArabic-Light.woff2') format('woff2'),
+        url('fonts/SaudiaTextArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Headline Arabic';
+    src: url('fonts/SaudiaHeadlineArabic-Regular.woff2') format('woff2'),
+        url('fonts/SaudiaHeadlineArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Saudia Text Arabic';
+    src: url('fonts/SaudiaTextArabic-Regular.woff2') format('woff2'),
+        url('fonts/SaudiaTextArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.fs-18{
+    font-size: 18px;
+}
+
+.fs-41{
+    font-size: 41px;
+}
+
+.saudiatext-regular{
+    font-family: 'Saudia Text';
+    font-weight: normal;
+}
+.saudiahead-ar-regular{
+    font-family: 'Saudia Headline Arabic';
+    font-weight: normal;
+}
+.saudiahead-ar-light{
+    font-family: 'Saudia Headline Arabic';
+    font-weight: 300;
+}
+.saudiahead-regular{
+    font-family: 'Saudia Headline';
+    font-weight: normal;
+}
+
+
+.body-background{
+    background-image:url('images/background.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+/* .navbar{
+    height: 80px;
+} */
+.btn-lang{
+    background-color: rgb(0, 81, 38)!important;
+    color: white !important;
+    border-radius: 50% !important;
+    width: 45px;
+    height: 45px;
+}
+.color-grey{
+color: rgb(108, 108, 108);
+}
+
+.color-white{
+    color: white;
+}
+
+.color-orange{
+    color: #a39161;
+}
+.text-section{
+    color: white;
+margin-top: -15rem;
+}
+.destination{
+    color: white;
+    position: absolute;
+    top:20rem;
+    right: 20rem;
+}
+.goals{
+    line-height: 2.2;
+}
+form{
+    margin-top: 300px;
+}
+.btn-send{
+    background-color: #a39161!important;
+    color: white!important;
+    border-radius: 10px!important;
+}
+.logo-image{
+    margin-top: 450px;
+}
+.logo-image-2{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.logo-image-2 img{
+    width:200px;
+    height: 100px;
+}
