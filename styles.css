@@ -143,7 +143,6 @@
     background-image:url('images/background.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 /* .navbar{
     height: 80px;
@@ -180,15 +179,30 @@ margin-top: -15rem;
     line-height: 2.2;
 }
 form{
-    margin-top: 300px;
+    margin-top: 40rem;
+
 }
+.green-input{
+    /* background-color:#043a0a !important; */
+    background-image: url('images/input-background.JPG') !important;
+    background-size: cover;
+    color: white !important;
+    border:none !important;
+    border-radius: 10px !important;
+ }
+ .gj-datepicker-bootstrap span[role=right-icon].input-group-addon {
+    display: none;
+ }
+ a{
+    text-decoration: none;
+ }
 .btn-send{
     background-color: #a39161!important;
     color: white!important;
     border-radius: 10px!important;
 }
 .logo-image{
-    margin-top: 450px;
+    margin-top: 30rem;
 }
 .logo-image-2{
     margin-top: 100px;
@@ -200,4 +214,7 @@ form{
 .logo-image-2 img{
     width:200px;
     height: 100px;
+}
+.btn:hover{
+    opacity: 0.8;
 }
