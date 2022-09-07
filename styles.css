@@ -184,8 +184,9 @@ form{
 
 }
 .green-input{
-    /* background-color:#043a0a !important; */
-    background-image: url('images/input-background.JPG') !important;
+    background-color:rgba(4, 58, 10,.75) !important;
+    mix-blend-mode: overlay;
+    /* background-image: url('images/input-background.JPG') !important; */
     background-size: cover;
     color: white !important;
     border:none !important;
