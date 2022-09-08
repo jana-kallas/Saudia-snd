@@ -140,7 +140,7 @@
 
 
 .body-background{
-    background-image:url('images/background.jpg') ;
+    background-image:url('images/background-md.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -153,6 +153,7 @@
     border-radius: 50% !important;
     width: 45px;
     height: 45px;
+    
 }
 .color-grey{
 color: rgb(108, 108, 108);
@@ -165,9 +166,15 @@ color: rgb(108, 108, 108);
 .color-orange{
     color: #a39161;
 }
+
+.nav-logo{
+    width: 170px;
+    height: 50px;
+}
+
 .text-section{
     color: white;
-margin-top: -15rem;
+    margin-top: -22rem;
 }
 .destination{
     color: white;
@@ -176,11 +183,22 @@ margin-top: -15rem;
     right: 20rem;
     font-size: 24px;
 }
+.question{
+    font-size: 41px;
+    margin-top: 10px;
+}
+.woman-image{
+    margin-top: -6rem;
+}
 .goals{
     line-height: 2.2;
+    margin-top:20px;
+    font-size: 20px;
 }
 form{
-    margin-top: 40rem;
+    margin-top: 15rem;
+    letter-spacing: 2px;
+    font-size: 16px;
 
 }
 .green-input{
@@ -206,13 +224,14 @@ form{
     background-color: #a39161!important;
     color: white!important;
     border-radius: 10px!important;
+    margin-top: 5rem;
 }
 .logo-image{
-    margin-top: 30rem;
+    margin-top: 18rem;
 }
 .logo-image-2{
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background-color: white;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -225,15 +244,19 @@ form{
     opacity: 0.8;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
+    .body-background{
+        background-image: url('images/background1600.jpg');
+    }
     form{
-        margin-top: 45rem;
+        margin-top: 25rem;
     }
     .destination{
         right: 10rem;
+        font-size: 35px;
     }
     .logo-image{
-        margin-top: 40rem;
+        margin-top: 20rem;
     }
 
 }
@@ -246,27 +269,97 @@ form{
     }
 }
 
+@media screen and (min-width: 992px) and (max-width:1200px) {
+
+    .destination{
+        right: 4rem;
+
+    }
+}
+
 @media screen and (max-width: 991px) {
+    .body-background{
+        background-image: url('images/website-3.jpg');
+    }
     .destination{
         top: 10%;
-        right: 0;
-        font-size: 16px !important;
-        width: 40%;
+        right: 3rem;
+        font-size: 18px !important;
+        width: 45%;
       }
       .text-section{
-         margin-top: 2rem;
+         /* margin-top: -7rem; */
+         margin-top: -10rem;
+      }
+      form{
+        margin-top: 0.5rem;
+        font-size: 9px;
       }
       .form-group{
         float: left;
         /* width: 20% !; */
       }
+      .goals{
+
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .body-background{
+        background-image: url('images/mobile.jpg');
+    }
+    .text-section{
+        margin-top: -12rem;
+    }
+    .question{
+        font-size: 30px;
+    }
+    .goals{
+        line-height: 1.5;
+    }
         form{
-            margin-top: 50rem;
+            margin-top: 10rem;
+            font-size: 10px;
+        
+        }
+        
+        .destination{
+            top: 8rem;
+            right: 1rem;
+            font-size: 16px !important;
+            width: 45%;
+          }
+          .nav-logo{
+            width: 80px;
+            height: 40px;
         }
 }
+    @media screen and (min-width: 430px) and (max-width: 540px) {
+        .body-background{
+            background-image: url('images/background-sm.jpg');
+        }
+        .destination{
+            top: 5rem;
+            right: 2rem;
+            font-size: 12px !important;
+            width: 40%;
+          }
+          .text-section{
+            margin-top: 7rem;
+         }
+         form{
+             margin-top: 2rem;
+             font-size: 10px;
+         }
+         .btn-send{
+             margin-top: 0;
+         }
+         .form-group{
+             float: none;
+             /* width: 20% !; */
+           }
+    }
 
     @media screen and (max-width: 430px) {
         .body-background{
@@ -282,8 +375,10 @@ form{
            margin-top: 7rem;
         }
         form{
-            margin-top: 5rem;
+            margin-top: 15rem;
+            font-size: 12px;
         }
+
         .form-group{
             float: none;
             /* width: 20% !; */
@@ -293,7 +388,20 @@ form{
         }
     }
     @media screen and (max-width: 390px){
+        .body-background{
+            background-image: url('images/background-mobile.jpg');
+        }
+        .btn-send{
+            margin-top: 0rem;
+        }
         .text-section{
-            margin-top: 5rem;
+            margin-top: 0rem;
+         }
+         form{
+            margin-top: -6rem;
+            font-size: 9px;
+         }
+         .nav-logo{
+            width: 70px;
          }
     }
