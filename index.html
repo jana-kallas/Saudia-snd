@@ -20,7 +20,7 @@
 </head>
 <body>
     <nav class="navbar" >
-        <div class="container d-flex justify-content-between  pb-4">
+        <div class="container-fluid px-5 d-flex justify-content-between pb-4">
             <div>
                 <a class="navbar-brand" href="#">
                     <img src="images/saudia-logo.svg" alt="logo" class="nav-logo">
@@ -35,15 +35,15 @@
     </nav>
 
     <div class="container-fluid body-background p-0">
-        <div class="position-relative">
-            <img src="images/character.png" alt="" class="woman-image w-100">
+        <div class="background-woman position-relative">
+            <!-- <img src="images/character.png" alt="" class="woman-image w-100"> -->
             <div class="container">
               <div class=" destination position-absolute">
                 <p class="saudiahead-ar-regular">DESTINATION: THE FUTURE <br>WHAT WILL YOU CARRY WITH YOU? </p>
                 <p class="saudiahead-ar-light">SV2030</p>
               </div>
             </div>
-  
+          </div>
           <div class="text-section text-center">
             <p class="color-orange saudiahead-regular fs-2">This is a message from you to you.<br>You will receive it 1 year from now</p>
             <p class="color-white mt-5 saudiahead-ar-regular fs-18 "> Unleash your wildest hopes & dreams and answer...</p>
@@ -56,12 +56,9 @@
               <p class="color-white"> AND SEND IT TO YOUR FUTURE SELF</p>
             </div>
           </div>
-        </div>
 
-
-
-        <div class="container">
-          <form>
+        <div class="container-fluid p-0">
+            <form class="py-5 position-relative">
             <div class="row mt-5 pt-5 text-white saudiahead-ar-regular">
               <div class="col-md-9  mx-auto">
                 <div class="form-group col-md-4" >
@@ -110,48 +107,6 @@
             uiLibrary: 'bootstrap'
         });
 
-
-        $(document).ready(function() {
-  var open = false;
-  $('.circle-bg').on('click', function() {
-    if(open === false)
-      {
-       $(this).animate({
-          height: '+=10px',
-          width: '+=10px'
-       }, 300);
-        
-     $('.outer-icons').animate({
-         opacity: 1
-        }, 1000);
-        
-     $('.icon').fadeOut();
-     $(this).html("<i class = 'icon fa fa-times' style='display: none'> </i>");
-     $('.icon').fadeIn();
-        
-        open = true;
-      }
-    
-    else {
-      $(this).animate({
-        height: '-=10px',
-        width: '-=10px'
-      }, 200);
-    
-    $('.outer-icons').animate({
-        opacity: 0
-      }, 300);
-      
-    $('.icon').fadeOut();
-     $(this).html("<i class = 'icon fa fa-bars' style='display: none'> </i>");
-     $('.icon').fadeIn();
-      
-      open = false;
-  } 
-    
- });
-  
-});
     </script>
 </body>
 </html>
