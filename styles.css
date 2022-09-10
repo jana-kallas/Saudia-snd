@@ -166,7 +166,6 @@ body{
     z-index: 1 !important;
     
 }
-
 .color-grey{
 color: rgb(108, 108, 108);
 }
@@ -212,16 +211,20 @@ form{
     letter-spacing: 2px;
     font-size: 16px;
 }
-/* form::before{
+form::before{
     content: url('images/swosh.png');
     position:absolute;
-    margin-top: -7.2rem;
+    margin-top: -7rem;
+    width: 100%;
+    text-align: center;
 }
 form::after{
     content: url('images/swosh.png');
     position:absolute;
-    margin-top: -1.1rem;
-} */
+    margin-top: -1.5rem;
+    width: 100%;
+    text-align: center;
+}
 .green-input{
     background-color:rgba(4, 58, 10,.75) !important;
     mix-blend-mode: overlay;
@@ -233,9 +236,6 @@ form::after{
     height: 55px !important;
  }
 
- .gj-datepicker-bootstrap span[role=right-icon].input-group-addon {
-    display: none;
- }
  a:hover{
     text-decoration: none !important;
     color: rgb(138, 138, 138) !important;
@@ -458,5 +458,12 @@ form::after{
          }
          .logo-image{
             width: 200px;
+        }
+        form::before{
+            position: absolute;
+            /* width: min-content; */
+        }
+        form::after{
+           width: 390px;
         }
     }
