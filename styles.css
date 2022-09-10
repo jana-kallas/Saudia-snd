@@ -460,10 +460,11 @@ form::after{
             width: 200px;
         }
         form::before{
-            position: absolute;
+            content: none;
+            /* position: absolute; */
             /* width: min-content; */
         }
         form::after{
-           width: 390px;
+          content: none;
         }
     }
