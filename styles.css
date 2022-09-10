@@ -205,8 +205,8 @@ color: rgb(108, 108, 108);
     font-size: 20px;
 }
 form{
-    background-color: rgb(47, 133, 47);
-    opacity: 0.5;
+    background-color: rgba(47, 133, 47, 0.623);
+    /* opacity: 0.5; */
     margin-top: 2rem;
     letter-spacing: 2px;
     font-size: 16px;
