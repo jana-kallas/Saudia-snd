@@ -566,7 +566,7 @@ form::after{
     @media screen and (min-width: 430px) and (max-width: 540px) {
         .background-woman{
             height: 700px;
-            margin-top: -10rem;
+            margin-top: -8rem;
             background-image: url('images/mobile.png');
             background-repeat: no-repeat;
             background-size: cover;
