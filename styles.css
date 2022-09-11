@@ -163,7 +163,7 @@ body{
     width: 45px;
     height: 45px;
     font-size: 20px !important;
-    z-index: 1 !important;
+    z-index: 1 !important; 
     
 }
 .color-grey{
@@ -205,11 +205,16 @@ color: rgb(108, 108, 108);
     font-size: 20px;
 }
 form{
-    background-color: rgba(47, 133, 47, 0.623);
-    /* opacity: 0.5; */
+    background-color: rgba(47, 133, 47, 0.5);
     margin-top: 2rem;
     letter-spacing: 2px;
     font-size: 16px;
+}
+.form-swosh{
+    margin-top: -5rem;
+}
+.form-swosh-2{
+    margin-top: 5rem;
 }
 form::before{
     content: url('images/swosh.png');
@@ -244,7 +249,7 @@ form::after{
     background-color: #a39161!important;
     color: white!important;
     border-radius: 10px!important;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 .btn-share{
     background-color:none!important;
@@ -271,109 +276,293 @@ form::after{
     opacity: 0.8;
 }
 
+
+.btn1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* box-shadow: 4px 2px 10px 1px rgba(0, 0, 0, 0.2); */
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #a39161;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+  }
+
+  .btn1 .fa-share-alt {
+    /* margin-right: 2px; */
+  }
+  .btn1 > i{
+    font-size: 16px;
+  }
+  .btn1 > i:hover {
+    opacity: 0.7;
+  }
+  .btn1:active:not(:focus-within) {
+    /* box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2) inset; */
+  }
+  .btn1:active:not(:focus-within) > i {
+    /* transform: translate(0.8px, 0.8px); */
+  }
+  
+  .social {
+    position: absolute;
+    /* top: -40px; */
+    left: 30px;
+    display: none;
+    /* justify-content: space-between; */
+    background-color: rgba(255, 255, 255);
+    border:1px sol #a39161;
+    padding: 5px 5px;
+    border-radius: 10px;
+  }
+  .toggle input[type="checkbox"]:checked + .btn1 .social {
+    animation: fadeIn 1s;
+    display: flex;
+  }
+  .toggle input[type="checkbox"]:not(:checked) + .btn1 .social {
+    animation: fadeOut 1s;
+  }
+  
+  .toggle input[type="checkbox"]:checked + .btn1 .fa-share-alt {
+    display: none;
+  }
+  .toggle input[type="checkbox"]:not(:checked) + .btn1 .fa-times {
+    display: none;
+  }
+  .social a {
+    margin: 0 15px;
+    font-size: 22px;
+    color: #a39161;
+  }
+  .fa-facebook:hover , .fa-twitter:hover {
+    color: rgb(29, 161, 242);
+  }
+  .fa-instagram-square:hover {
+    background: -webkit-linear-gradient(
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d,
+      #f56040,
+      #f77737,
+      #fcaf45,
+      #ffdc80
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fa-whatsapp:hover {
+    color: green;
+  }
+      
+    input[type="checkbox"] {
+        display: none;
+    }
+   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+
 @media screen and (min-width: 1600px) {
     form{
-        margin-top: 25rem;
+        margin-top: 5rem;
     }
     .destination{
         right: 10rem;
         font-size: 35px;
     }
     .logo-image{
-        margin-top: 20rem;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
     }
     .background-woman{
-        height: 2000px;
+        height: 1500px;
         margin-top: -17rem;
         background-image: url('images/wide.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .destination{
-        right: 10rem;
+    .navbar{
+        padding-left: 100px;
+        padding-right: 100px;
 
     }
-}
-
-@media screen and (min-width: 992px) and (max-width:1200px) {
-    .background-woman{
-        height: 1000px;
-        margin-top: -10rem;
-        background-image: url('images/wide.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .destination{
-        top: 25%;
-        right: 3rem;
-        width: 40%;
-
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .background-woman{
-        height: 800px;
-        margin-top: -10rem;
-        background-image: url('images/normal.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .destination{
-        top: 25%;
-        right: 3rem;
-        font-size: 18px !important;
-        width: 45%;
-      }
-      .text-section{
-         margin-top: -10rem;
-      }
-      form{
-        margin-top: 0.5rem;
-        font-size: 9px;
-      }
-      .form-group{
-        float: left;
-        /* width: 20% !; */
-      }
-      .goals{
-
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .background-woman{
-        height: 700px;
-        margin-top: -10rem;
-        background-image: url('images/normal.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .destination{
-        top: 17rem;
-        right: 1rem;
-        font-size: 18px !important;
-        width: 45%;
-      }
     .text-section{
-        margin-top: -5rem;
+        margin-top: -25rem;
     }
-    .question{
-        font-size: 30px;
+}
+
+    @media screen and (min-width: 1200px) {
+
+        .destination{
+            right: 10rem;
+        }
+        .social {
+            /* bottom: -40px; */
+            left: 45px;
+        }
     }
 
-    form{
-            margin-top: 2rem;
-            font-size: 12px;
-        
+    @media screen and (min-width: 992px) and (max-width:1200px) {
+        .background-woman{
+            height: 1000px;
+            margin-top: -10rem;
+            background-image: url('images/wide.png');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-}
+        .destination{
+            top: 25%;
+            right: 3rem;
+            width: 40%;
+        }
+        form::before{
+            /* display: inline-block; */
+            /* overflow: hidden; */
+            margin-left: -10rem;
+            width: 100%;
+            /* transform: scale(.9); */
+            
+        }
+        form::after{
+            margin-left: -10rem;
+            width: 100%;
+            /* transform: scale(.); */
+        }
+        .social {
+            /* bottom: -40px; */
+            left: 45px;
+        }
+        .social a {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .background-woman{
+            height: 800px;
+            margin-top: -10rem;
+            background-image: url('images/normal.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .destination{
+            top: 25%;
+            right: 3rem;
+            font-size: 18px !important;
+            width: 45%;
+        }
+        .text-section{
+            margin-top: -10rem;
+        }
+        form{
+            margin-top: 0.5rem;
+            font-size: 9px;
+        }
+        .form-group{
+            float: left;
+            /* width: 20% !; */
+        }
+        .goals{
+
+            font-size: 14px;
+        }
+            form::before{
+                /* display: inline-block; */
+                /* overflow: hidden; */
+                margin-left: -10rem;
+                width: 100%;
+                transform: scale(.7);
+                
+            }
+            form::after{
+                margin-left: -10rem;
+                width: 100%;
+                transform: scale(.7);
+            }
+            .social {
+                /* bottom: -40px; */
+                left: 40px;
+            }
+            .social a {
+                margin: 0 5px;
+                font-size: 18px;
+                
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .background-woman{
+            height: 700px;
+            margin-top: -10rem;
+            background-image: url('images/normal.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .destination{
+            top: 17rem;
+            right: 1rem;
+            font-size: 18px !important;
+            width: 45%;
+        }
+        .text-section{
+            margin-top: -5rem;
+        }
+        .question{
+            font-size: 30px;
+        }
+
+        form{
+                margin-top: 2rem;
+                font-size: 12px;
+            
+            }
+            form::before{
+                /* display: inline-block; */
+                /* overflow: hidden; */
+                margin-left: -10rem;
+                width: 100%;
+                transform: scale(.5);
+                
+            }
+            form::after{
+                margin-left: -10rem;
+                width: 100%;
+                transform: scale(.5);
+            }
+            .social {
+                /* bottom: -40px; */
+                left: 40px;
+            }
+            .social a {
+                margin: 0 5px;
+                font-size: 18px;
+            }
+    }
     @media screen and (min-width: 430px) and (max-width: 540px) {
         .background-woman{
             height: 700px;
@@ -402,6 +591,27 @@ form::after{
              float: none;
              /* width: 20% !; */
            }
+           form::before{
+            /* display: inline-block; */
+            /* overflow: hidden; */
+            margin-left: -10rem;
+            width: 100%;
+            transform: scale(.4);
+            
+        }
+        form::after{
+            margin-left: -10rem;
+            width: 100%;
+            transform: scale(.4);
+        }
+        .social {
+            /* bottom: -40px; */
+            left: 40px;
+          }
+          .social a {
+            margin: 0 5px;
+            font-size: 18px;
+          }
     }
 
     @media screen and (max-width: 430px) {
@@ -425,6 +635,19 @@ form::after{
             margin-top: 7rem;
             font-size: 12px;
         }
+        form::before{
+            /* display: inline-block; */
+            /* overflow: hidden; */
+            margin-left: -10rem;
+            width: 100%;
+            transform: scale(.3);
+            
+        }
+        form::after{
+            margin-left: -10rem;
+            width: 100%;
+            transform: scale(.3);
+        }
 
         .form-group{
             float: none;
@@ -433,9 +656,16 @@ form::after{
             margin-top: 7rem;
             width: 200px;
         }
+        .social {
+            bottom: -40px;
+            left: auto;
+          }
+          .social a {
+            margin: 0 5px;
+            font-size: 18px;
+          }
     }
     @media screen and (max-width: 390px){
-
         .destination{
             top: 10rem;
             right: 1rem;
@@ -460,11 +690,29 @@ form::after{
             width: 200px;
         }
         form::before{
-            content: none;
-            /* position: absolute; */
-            /* width: min-content; */
+            /* display: inline-block; */
+            /* overflow: hidden; */
+            margin-left: -10rem;
+            width: 100%;
+            transform: scale(.3);
+            
         }
         form::after{
-          content: none;
+            margin-left: -10rem;
+            width: 100%;
+            transform: scale(.3);
         }
+
+        .social {
+            bottom: -40px;
+            left: auto;
+          }
+          .social a {
+            margin: 0 5px;
+            font-size: 16px;
+          }
     }
+
+
+
+      
