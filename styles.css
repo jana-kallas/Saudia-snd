@@ -137,6 +137,14 @@
     font-family: 'Saudia Headline';
     font-weight: normal;
 }
+.saudiatext-light{
+    font-family: 'Saudia Text';
+    font-weight: 300;
+}
+.saudiatext-ar-bold{
+    font-family: 'Saudia Text Arabic';
+    font-weight: bold;
+}
 body{
     overflow-x: hidden;
 }

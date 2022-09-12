@@ -1,0 +1,43 @@
+ 
+body{overflow-x: hidden;}
+  .inner-page-hero {
+    padding-top: 50px;
+  }
+  h2.h2-md { 
+    font-size:5rem; 
+}
+h4.h4-xl { font-size: 4rem; } 
+h5.h5-xl { font-size: 3rem; }
+h6.h6-xl{font-size: 2rem;}
+p.p-xl { font-size: 2rem; }
+p.p-lg { font-size: 1.75rem; } 
+p.p-md{font-size: 1.5rem;}
+ .terms-title {
+    margin-bottom: 70px;
+  }
+  
+  .terms-title p {
+    line-height: 1;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  
+  .terms-section span.txt-500 {
+    color: #151515;
+  }
+  
+  /*------------------------------------------*/
+  /*  TERMS PAGE TYPOGRAPHY
+  /*------------------------------------------*/
+  
+  .terms-box { 
+    margin-bottom: 30px;
+  }
+  
+  .terms-box h5 {
+    margin-bottom: 25px;
+  }
+  
+  .terms-box a {
+    font-weight: 500;
+  }
